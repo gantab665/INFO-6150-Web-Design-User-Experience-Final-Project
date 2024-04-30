@@ -1,0 +1,113 @@
+/* Base Styles */
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, #c850c0, #4158d0); */
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('/public/images/beach.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .login-content {
+    background: #fff;
+    width: 80%;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-form {
+    width: 100%;
+  }
+  
+  .login-form-title {
+    display: block;
+    font-size: 30px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .login-form-subtitle {
+    display: block;
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .wrap-input {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333333;
+    display: block;
+    width: 100%;
+    background: #f7f7f7;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 15px; /* Adjust padding as needed */
+    border: none;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .focus-input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border-radius: 25px;
+    padding: 0 30px 0 15px; /* Adjust padding as needed */
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .input:focus + .focus-input, .has-val.focus-input {
+    top: -22px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .container-login-form-btn {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  /* Media Queries */
+  @media only screen and (min-width: 768px) {
+    /* Tablets and PCs */
+    .login-content {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    /* PCs */
+    .login-content {
+      width: 30%;
+    }
+  }
